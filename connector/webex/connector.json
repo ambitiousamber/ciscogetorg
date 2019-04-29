@@ -8,7 +8,7 @@
     "description": "This is the Cisco Webex Teams connector",
     "category": "CiscoWebexTeams",
     "visible": true,
-    "smallIcon": "cisco.png"
+    "smallIcon": "ciscoold.png"
   },
   "ref": "CiscoWebexTeams/connector/webex",
   "keyfield": "name",

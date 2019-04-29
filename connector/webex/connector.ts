@@ -31,15 +31,15 @@ export class TibcoWebexConnectorContribution extends WiServiceHandlerContributio
          
          for (let configuration of context.settings) {
     		if( configuration.name ===  "ConsumerKey") {
-         ConsumerId = configuration
+            ConsumerKey = configuration
     		} else if( configuration.name ===  "ConsumerSecret") {
-         ConsumerSecret = configuration
+            ConsumerSecret = configuration
     		} 
 		 }
      
          
 
-         if ConsumerKey.value && ConsumerSecret.value) {
+         if (ConsumerKey.value && ConsumerSecret.value) {
              
            return ValidationResult.newValidationResult().setReadOnly(false)
          }
