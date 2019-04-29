@@ -8,7 +8,7 @@
     "display": {
        "category": "CiscoWebexTeams",
        "visible": true,
-       "smallIcon": "cisco.png",
+       "smallIcon": "ciscoold.png",
        "description": "This activity returns the Cisco Webex Teams Org ID, display name, and creation date."
     },
  
