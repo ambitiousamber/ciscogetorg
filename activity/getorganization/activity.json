@@ -1,0 +1,53 @@
+{
+    "name": "GetOrganization",
+    "version": "1.0.0",
+    "author": "TIBCO Software Inc.",
+    "type": "flogo:activity",
+    "title": "Get Organization",
+     
+    "display": {
+       "category": "CiscoWebexTeams",
+       "visible": true,
+       "smallIcon": "cisco.png",
+       "description": "This activity returns the Cisco Webex Teams Org ID, display name, and creation date."
+    },
+ 
+    "ref": "CiscoWebexTeams/activity/getorganization",
+    "inputs": [
+           {
+            "name": "WebexConnection",
+            "type": "object",
+            "required": true,
+            "display":{
+              "name": "Webex Connection",
+              "description": "Select Webex Connection",
+              "type": "connection"
+            },
+            "allowed":[]
+           },
+           
+           {
+            "name": "OrgID",
+            "type": "string",
+            "required": true
+           }
+
+
+           
+           
+           
+    ],
+
+
+    
+     
+  
+    "outputs": [
+           {
+            "name": "responseBody", 
+            "type": "object"
+            
+              }
+          
+    ]
+}

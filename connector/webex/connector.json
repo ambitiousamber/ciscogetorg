@@ -1,0 +1,63 @@
+{
+  "name": "CiscoWebexTeams ",
+  "title": "Cisco Webex Teams Connector",
+  "author": "Amber Jaura",
+  "type": "flogo:connector",
+  "version": "1.0.0",
+  "display": {
+    "description": "This is the Cisco Webex Teams connector",
+    "category": "CiscoWebexTeams",
+    "visible": true,
+    "smallIcon": "cisco.png"
+  },
+  "ref": "CiscoWebexTeams/connector/webex",
+  "keyfield": "name",
+  "settings": [
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "Connection Name",
+        "description": "Name of the connection"
+      }
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "display": {
+        "name": "Description",
+        "description": "Connection description"
+      }
+    },
+    {
+      "name": "ConsumerKey",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "ConsumerKey",
+        "description": "Cisco Webex Teams Client ID",
+        "type": "password"
+      }
+    },
+    {
+      "name": "ConsumerSecret",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "ConsumerSecret",
+        "description": "Cisco Webex Teams Client Secret",
+        "type": "password"
+      }
+    }
+    
+  ],
+  "actions": [
+    {
+      "name": "Connect",
+      "display": {
+        "readonly": true
+      }
+    }
+  ]
+}
