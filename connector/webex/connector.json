@@ -1,36 +1,35 @@
 {
-  "name": "CiscoWebexTeams",
-  "title": "Cisco Webex Teams Connector",
-  "author": "Amber Jaura",
-  "type": "flogo:connector",
-  "version": "1.0.0",
-  "display": {
-    "description": "This is the Cisco Webex Teams connector",
-    "category": "CiscoWebexTeams",
-    "visible": true,
-    "smallIcon": "ciscoold.png"
-  },
-  "ref": "CiscoWebexTeams/connector/webex",
-  "keyfield": "name",
-  "settings": [
-    {
-      "name": "name",
-      "type": "string",
-      "required": true,
-      "display": {
-        "name": "Connection Name",
-        "description": "Name of the connection"
-      }
+    "name": "CiscoWebexTeams",
+    "title": "Cisco Webex Teams Connector",
+    "author": "Amber Jaura",
+    "type": "flogo:connector",
+    "version": "1.0.0",
+    "display": {
+      "description": "This is the Cisco Webex Teams connector",
+      "category": "CiscoWebexTeams",
+      "visible": true,
+      "smallIcon": "ciscoold.png"
     },
-    {
+    "ref": "CiscoWebexTeams/connector/webex",
+    "keyfield": "name",
+    "settings": [{
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "display": {
+                "name": "Connection Name",
+                "description": "Name of the connection"
+          }
+      },
+      {
       "name": "description",
       "type": "string",
       "display": {
         "name": "Description",
         "description": "Connection description"
-      }
-    },
-    {
+          }
+      },
+      {
       "name": "ConsumerKey",
       "type": "string",
       "required": true,
@@ -52,12 +51,10 @@
     }
     
   ],
-  "actions": [
-    {
+  "actions": [{
       "name": "Connect",
       "display": {
         "readonly": true
       }
-    }
-  ]
+   }]
 }
